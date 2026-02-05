@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+import Category from "./Category.astro";
+
+interface Props {
+  experiences: Array<{
+    id: number;
+    date: string;
+    title: string;
+    role: string;
+    description: string;
+    techStack: string[];
+  }>;
+}
+
+const { experiences } = Astro.props;
+---
+
+<section id="experience" class="py-4">
+  <h2 class="py-2 text-xl font-semibold pb-8 sm:hidden">EXPERIENCE</h2>
+  <div class="space-y-8 sm:relative">
+    {
+      experiences.map((experience) => (
+        <div class="rounded-xl transition-all duration-300 cursor-pointer sm:grid grid-cols-8 justify-between space-y-2 sm:p-5 bg-white">
+          <p class="text-sm text-gray-500 col-span-2 sm:mt-1">
+            {experience.date}
+          </p>
+          <div class="col-span-6 ml-4">
+            <h3 class="text-lg font-semibold text-gray-900">
+              {experience.title}
+            </h3>
+            <p class="text-sm font-medium text-indigo-600 mb-3">
+              {experience.role}
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+              {experience.description}
+            </p>
+            <div class="flex flex-wrap gap-2 mt-4">
+              {experience.techStack.map(
+                (tech: string) => tech && <Category tech={tech} />,
+              )}
+            </div>
+          </div>
+        </div>
+      ))
+    }
+    <a href="#" class="pt-2 font-semibold sm:absolute sm:left-5">
+      View Full Project Archive →
+    </a>
+  </div>
+</section>

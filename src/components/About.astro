@@ -1,0 +1,13 @@
+---
+import type { About } from "@/content/portfolio/schema";
+
+interface Props {
+  about: About;
+}
+
+const { about } = Astro.props;
+---
+
+<div id="about">
+  {about.map((item) => <p>{item}</p>)}
+</div>

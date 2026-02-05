@@ -1,0 +1,69 @@
+{
+  "about": [
+    "I am a Fullstack Engineer who builds reliable and scalable web applications with strong technical foundations. I focus on core principles such as data design, system structure, and code quality, because I believe solid fundamentals make it easier to adapt to any technology and solve complex problems.",
+    "I worked as a Fullstack Engineer at the Information and Communication Technology Academic Support Unit, where I built web applications from scratch—from designing data models and system flows to delivering features that work smoothly on the frontend. My work helped clients reach their goals efficiently and improved their experience with the system.",
+    "I aim to build solutions that meet clients’ needs while also making the codebase easy for my teammates to understand and maintain. I enjoy connecting strong fundamentals with real-world challenges to create practical and well-structured solutions."
+  ],
+  "experiences": [
+    {
+      "id": 1,
+      "date": "Oct 2025 - Nov 2025",
+      "title": "Balai Besar Pelatihan Vokasi dan Produktivitas",
+      "role": "Generative AI Tools for Digital Content and Business",
+      "description": "Leveraged advanced AI tools to transform website development, automation, and digital marketing workflows, delivering faster, smarter, and more scalable solutions. Built and deployed high-performance websites using AI-assisted tools like Bolt, significantly reducing development time while maintaining quality and usability. Developed AI-powered chatbots using n8n integrated with PostgreSQL to enable real-time data processing, automated customer interactions, and dynamic product information delivery. Created AI-driven marketing videos with Suno AI and Sora, automating content production and enhancing brand storytelling, resulting in more engaging and efficient digital campaigns.",
+      "techStack": ["n8n", "ChatGPT", "SunoAI", "Sora", "BoltAI"]
+    },
+    {
+      "id": 2,
+      "date": "May 2024 - Aug 2024",
+      "title": "Unit Penunjang Akademik Teknologi Informasi dan Komunikasi",
+      "role": "Fullstack Engineer",
+      "description": "Leveraged Laravel to design, build, and maintain scalable web applications with robust authentication, authorization, and remove full CRUD functionality, ensuring secure and efficient system performance. Architected relational database structures using PostgreSQL, designing optimized schemas and implementing migrations and indexing strategies to improve data integrity, query performance, and long-term maintainability. Delivered reliable backend solutions that supported business logic, streamlined development workflows, and enhanced overall application scalability.",
+      "techStack": ["Laravel", "PHP", "PostgreSQL"]
+    },
+    {
+      "id": 3,
+      "date": "Aug 2023 - Feb 2024",
+      "title": "Bangkit Academy led by Google, Tokopedia, Gojek, and Traveloka",
+      "role": "Machine Learning Cohort",
+      "description": "Contributed to TensorFlow-based machine learning model development as part of the Bangkit Machine Learning program, applying deep learning techniques to solve real-world environmental challenges. Collaborated in a cross-functional team to build a mobile application that classifies waste types using AI models and generates actionable recommendations for transforming waste into valuable products. Delivered an end-to-end ML solution that combined data processing, model training, and mobile integration, supporting smarter waste management and promoting sustainable innovation.",
+      "techStack": ["Tensorflow", "Python"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Trashify",
+      "description": "Trashify is a project focused on solving waste disposal problems in Indonesia through innovative waste-to-resource solutions.",
+      "techStack": [
+        "Tensorflow",
+        "ExpressJs",
+        "Kotlin",
+        "PostgreSQL",
+        "Typescript",
+        "Tailwind"
+      ],
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "name": "Inventory Management",
+      "description": "An inventory management application built with modern web technologies to manage warehouse inventory, track items, process incoming and outgoing goods, handle purchase orders, and control user roles and permissions.",
+      "techStack": [
+        "React",
+        "ExpressJs",
+        "PostgreSQL",
+        "Typescript",
+        "Tailwind"
+      ],
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "name": "Alumni Portal System",
+      "description": "Developed a web-based alumni portal that collects alumni survey data and provides analytical dashboards to visualize alumni career outcomes, employment status, and industry distribution.",
+      "techStack": ["Laravel", "PostgreSQL", "Chart.js", "PHP", "Tailwind"],
+      "link": "#"
+    }
+  ]
+}
