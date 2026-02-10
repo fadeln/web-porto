@@ -8,6 +8,7 @@ interface Props {
 const { about } = Astro.props;
 ---
 
-<div id="about">
-  {about.map((item) => <p>{item}</p>)}
-</div>
+<section id="about" class=" flex flex-col space-y-5 xl:pt-30 text-gray-700 leading-relaxed text-lg">
+  <h2 class="text-xl font-semibold pb-2 xl:hidden">ABOUT</h2>
+  {about.map((item) => <p >{item}</p>)}
+</section>

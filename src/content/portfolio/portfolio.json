@@ -1,7 +1,10 @@
 {
+  "linkedIn": "linkedin.com/in/fadelna",
+  "gitHub": "github.com/fadeln",
+  "email": "mailto:your@email.com?subject=Hello&body=Hello,%0D%0A%0D%0AI wanted to contact you.",
   "about": [
     "I am a Fullstack Engineer who builds reliable and scalable web applications with strong technical foundations. I focus on core principles such as data design, system structure, and code quality, because I believe solid fundamentals make it easier to adapt to any technology and solve complex problems.",
-    "I worked as a Fullstack Engineer at the Information and Communication Technology Academic Support Unit, where I built web applications from scratch—from designing data models and system flows to delivering features that work smoothly on the frontend. My work helped clients reach their goals efficiently and improved their experience with the system.",
+    "I worked as a Fullstack Engineer at the Information and Communication Technology Academic Support Unit, where I built web applications from scratch, from designing data models and system flows to delivering features that work smoothly on the frontend. My work helped clients reach their goals efficiently and improved their experience with the system.",
     "I aim to build solutions that meet clients’ needs while also making the codebase easy for my teammates to understand and maintain. I enjoy connecting strong fundamentals with real-world challenges to create practical and well-structured solutions."
   ],
   "experiences": [
@@ -10,40 +13,47 @@
       "date": "Oct 2025 - Nov 2025",
       "title": "Balai Besar Pelatihan Vokasi dan Produktivitas",
       "role": "Generative AI Tools for Digital Content and Business",
-      "description": "Leveraged advanced AI tools to transform website development, automation, and digital marketing workflows, delivering faster, smarter, and more scalable solutions. Built and deployed high-performance websites using AI-assisted tools like Bolt, significantly reducing development time while maintaining quality and usability. Developed AI-powered chatbots using n8n integrated with PostgreSQL to enable real-time data processing, automated customer interactions, and dynamic product information delivery. Created AI-driven marketing videos with Suno AI and Sora, automating content production and enhancing brand storytelling, resulting in more engaging and efficient digital campaigns.",
-      "techStack": ["n8n", "ChatGPT", "SunoAI", "Sora", "BoltAI"]
+      "description": "Leveraged AI tools to accelerate website development, automation, and digital marketing. Built high-performance websites with AI-assisted tools, developed AI-powered chatbots with n8n and PostgreSQL, and created AI-driven marketing content, improving efficiency, scalability, and user engagement.",
+      "techStack": ["n8n", "ChatGPT", "SunoAI", "Sora", "BoltAI"],
+      "link": "https://bbpvpserang.kemnaker.go.id/",
+      "certificateLink": "https://drive.google.com/file/d/1kRefHPI8e9JUnPUrFt-HR47e5jd9dFMr/view?usp=drive_link"
     },
     {
       "id": 2,
       "date": "May 2024 - Aug 2024",
       "title": "Unit Penunjang Akademik Teknologi Informasi dan Komunikasi",
       "role": "Fullstack Engineer",
-      "description": "Leveraged Laravel to design, build, and maintain scalable web applications with robust authentication, authorization, and remove full CRUD functionality, ensuring secure and efficient system performance. Architected relational database structures using PostgreSQL, designing optimized schemas and implementing migrations and indexing strategies to improve data integrity, query performance, and long-term maintainability. Delivered reliable backend solutions that supported business logic, streamlined development workflows, and enhanced overall application scalability.",
-      "techStack": ["Laravel", "PHP", "PostgreSQL"]
+      "description": "Built and maintained scalable Laravel applications with secure authentication and full CRUD functionality. Designed optimized PostgreSQL database schemas with migrations and indexing to improve performance and maintainability, delivering reliable and scalable backend solutions.",
+      "techStack": ["Laravel", "PHP", "PostgreSQL"],
+      "link": "https://upatik.untirta.ac.id/",
+      "certificateLink": ""
     },
     {
       "id": 3,
       "date": "Aug 2023 - Feb 2024",
       "title": "Bangkit Academy led by Google, Tokopedia, Gojek, and Traveloka",
       "role": "Machine Learning Cohort",
-      "description": "Contributed to TensorFlow-based machine learning model development as part of the Bangkit Machine Learning program, applying deep learning techniques to solve real-world environmental challenges. Collaborated in a cross-functional team to build a mobile application that classifies waste types using AI models and generates actionable recommendations for transforming waste into valuable products. Delivered an end-to-end ML solution that combined data processing, model training, and mobile integration, supporting smarter waste management and promoting sustainable innovation.",
-      "techStack": ["Tensorflow", "Python"]
+      "description": "Developed TensorFlow-based machine learning models in the Bangkit program to address environmental challenges. Collaborated on an AI-powered mobile app for waste classification and recommendations, delivering an end-to-end ML solution from data processing to mobile integration.",
+      "techStack": ["Tensorflow", "Python"],
+      "link": "https://www.linkedin.com/company/bangkit-academy/posts/?feedView=all",
+      "certificateLink": "https://drive.google.com/file/d/1cixzqMiZ5uhriYB6nm3nErfmwyKT7OYN/view?usp=drive_link"
     }
   ],
+  "experiencesLink": "https://drive.google.com/file/d/1-CFPLA1fS0D_ETduplhn9HeZP_YMDZ3-/view?usp=sharing",
   "projects": [
     {
-      "id": 1,
-      "name": "Trashify",
-      "description": "Trashify is a project focused on solving waste disposal problems in Indonesia through innovative waste-to-resource solutions.",
+      "id": 4,
+      "name": "Konco Hiling",
+      "description": "An integrated travel platform for booking tickets, renting transportation, and exploring tourist destinations through a CMS-powered blog.",
       "techStack": [
-        "Tensorflow",
         "ExpressJs",
-        "Kotlin",
+        "React",
         "PostgreSQL",
         "Typescript",
         "Tailwind"
       ],
-      "link": "#"
+      "link": "https://konco-client.vercel.app",
+      "imgPath": "konco.png"
     },
     {
       "id": 2,
@@ -56,14 +66,48 @@
         "Typescript",
         "Tailwind"
       ],
-      "link": "#"
+      "link": "https://demoinventorymanagement18391.netlify.app",
+      "imgPath": "imanagement.png"
+    },
+
+    {
+      "id": 5,
+      "name": "Wasteless Eats",
+      "description": "Wasteless Eats is a platform that redistributes surplus food and reusable goods by connecting donors and sellers with people who need them, reducing waste and supporting sustainable living.",
+      "techStack": [
+        "ExpressJs",
+        "Kotlin",
+        "PostgreSQL",
+        "Typescript",
+        "Tensorflow",
+        "Google Maps API"
+      ],
+      "link": "https://github.com/fadeln/wastelesseats",
+      "imgPath": "wastelesseats.png"
+    },
+    {
+      "id": 1,
+      "name": "Trashify",
+      "description": "Trashify is a project focused on solving waste disposal problems in Indonesia through innovative waste-to-resource solutions.",
+      "techStack": [
+        "Tensorflow",
+        "ExpressJs",
+        "Kotlin",
+        "PostgreSQL",
+        "Typescript",
+        "Tailwind"
+      ],
+      "link": "https://github.com/fadeln/trashify",
+      "imgPath": "trashify.png"
     },
     {
       "id": 3,
       "name": "Alumni Portal System",
       "description": "Developed a web-based alumni portal that collects alumni survey data and provides analytical dashboards to visualize alumni career outcomes, employment status, and industry distribution.",
       "techStack": ["Laravel", "PostgreSQL", "Chart.js", "PHP", "Tailwind"],
-      "link": "#"
+      "link": "https://github.com/fadeln/portal-alumni",
+      "imgPath": ""
     }
-  ]
+  ],
+  "projectsLink": "https://github.com/fadeln?tab=repositories"
 }

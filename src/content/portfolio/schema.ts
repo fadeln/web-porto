@@ -9,6 +9,8 @@ export const experienceSchema = z.object({
   role: z.string(),
   description: z.string(),
   techStack: z.array(z.string()),
+  link: z.string(),
+  certificateLink: z.string(),
 });
 
 export const projectSchema = z.object({
@@ -17,12 +19,18 @@ export const projectSchema = z.object({
   description: z.string(),
   techStack: z.array(z.string()),
   link: z.string(),
+  imgPath: z.string(),
 });
 
 export const portfolioSchema = z.object({
   about: aboutSchema,
+  linkedIn: z.string(),
+  gitHub: z.string(),
+  email: z.string(),
   experiences: z.array(experienceSchema),
+  experiencesLink: z.string(),
   projects: z.array(projectSchema),
+  projectsLink: z.string(),
 });
 
 export type About = z.infer<typeof aboutSchema>;

@@ -1,5 +1,4 @@
 ---
-import { getCollection } from "astro:content";
 import Category from "./Category.astro";
 
 interface Props {
@@ -10,42 +9,72 @@ interface Props {
     role: string;
     description: string;
     techStack: string[];
+    link: string;
+    certificateLink: string;
   }>;
+  experiencesLink: string;
 }
 
-const { experiences } = Astro.props;
+const { experiences, experiencesLink } = Astro.props;
 ---
 
-<section id="experience" class="py-4">
-  <h2 class="py-2 text-xl font-semibold pb-8 sm:hidden">EXPERIENCE</h2>
-  <div class="space-y-8 sm:relative">
-    {
-      experiences.map((experience) => (
-        <div class="rounded-xl transition-all duration-300 cursor-pointer sm:grid grid-cols-8 justify-between space-y-2 sm:p-5 bg-white">
-          <p class="text-sm text-gray-500 col-span-2 sm:mt-1">
-            {experience.date}
-          </p>
-          <div class="col-span-6 ml-4">
-            <h3 class="text-lg font-semibold text-gray-900">
-              {experience.title}
-            </h3>
-            <p class="text-sm font-medium text-indigo-600 mb-3">
-              {experience.role}
+<section>
+  <div id="experience" class="mb-5">
+    <h2 class="text-xl font-semibold pb-8 xl:hidden">EXPERIENCE</h2>
+    <div class="space-y-8 xl:relative group">
+      {
+        experiences.map((experience) => (
+          <div
+            class="rounded-xl transition-all duration-300 cursor-pointer xl:grid grid-cols-8 justify-between space-y-2 xl:py-5  group-hover:opacity-40 hover:opacity-100! group/title"
+            onclick={`window.open('${experience.link}', '_blank')`}
+          >
+            <p class="text-sm text-gray-500 col-span-2 xl:mt-1">
+              {experience.date}
             </p>
-            <p class="text-gray-700 leading-relaxed">
-              {experience.description}
-            </p>
-            <div class="flex flex-wrap gap-2 mt-4">
-              {experience.techStack.map(
-                (tech: string) => tech && <Category tech={tech} />,
+            <div class="col-span-6 xl:ml-4">
+              <h3 class="text-lg font-semibold group-hover/title:text-cyan-600 transition-all duration-300">
+                {experience.title}{" "}
+              </h3>
+              <p class="text-md font-medium  mb-3 text-gray-700">
+                {experience.role}
+              </p>
+              <p class="text-gray-700 leading-relaxed">
+                {experience.description}
+              </p>
+
+              <div class="flex flex-wrap gap-2 mt-4 mb-5">
+                {experience.techStack.map(
+                  (tech: string) => tech && <Category tech={tech} />,
+                )}
+              </div>
+
+              {experience.certificateLink && (
+                <a
+                  href={experience.certificateLink}
+                  onclick="event.stopPropagation()"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="relative mb-10 font-medium text-cyan-600 hover:text-cyan-800 transition
+             after:absolute after:right-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-cyan-600
+             after:scale-x-0 after:origin-left after:transition-transform after:duration-200
+             hover:after:scale-x-100"
+                >
+                  View Certificate
+                </a>
               )}
             </div>
           </div>
-        </div>
-      ))
-    }
-    <a href="#" class="pt-2 font-semibold sm:absolute sm:left-5">
-      View Full Project Archive →
-    </a>
+        ))
+      }
+    </div>
   </div>
+  <a
+    href="resume.pdf"
+    onclick="event.stopPropagation()"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="font-semibold hover:text-cyan-600 xl:pl-1 text-xl transition-all duration-300"
+  >
+    View Full Résumé →
+  </a>
 </section>
