@@ -1,3 +1,12 @@
+---
+interface Props {
+  email: string;
+  contactEmail: string;
+}
+
+const { email, contactEmail } = Astro.props;
+---
+
 <footer class="pb-28">
   Built with <b
     ><a href="https://astro.build/" class="hover:text-cyan-600">Astro</a>
@@ -10,13 +19,13 @@
   >. Thank you for exploring my work :). Feel free to reach out if you'd like to
   collaborate. <br />
   <a
-    href="mailto:fadelnajmiadliansyah@email.com?subject=Hello&body=Hello,%0D%0A%0D%0AI wanted to contact you."
+    href={contactEmail}
     class="relative mb-10 font-medium text-cyan-600 hover:text-cyan-800 transition
              after:absolute after:right-0 after:-bottom-1 after:h-0.5 after:w-full after:bg-cyan-600
              after:scale-x-0 after:origin-left after:transition-transform after:duration-200
              hover:after:scale-x-100"
     onclick="event.stopPropagation()"
     target="_blank"
-    rel="noopener noreferrer">fadelnajmiadliansyah@email.com</a
+    rel="noopener noreferrer">{email}</a
   >
 </footer>

@@ -1,7 +1,8 @@
 {
   "linkedIn": "https://www.linkedin.com/in/fadelna/",
   "gitHub": "https://github.com/fadeln",
-  "email": "mailto:your@email.com?subject=Hello&body=Hello,%0D%0A%0D%0AI wanted to contact you.",
+  "email": "contact@fadelnajmi.dev",
+  "contactEmail": "mailto:contact@fadelnajmi.dev?subject=Hello&body=Hello,%0D%0A%0D%0AI wanted to contact you.",
   "about": [
     "I am a Fullstack Engineer who builds reliable and scalable web applications with strong technical foundations. I focus on core principles such as data design, system structure, and code quality, because I believe solid fundamentals make it easier to adapt to any technology and solve complex problems.",
     "I worked as a Fullstack Engineer at the Information and Communication Technology Academic Support Unit, where I built web applications from scratch, from designing data models and system flows to delivering features that work smoothly on the frontend. My work helped clients reach their goals efficiently and improved their experience with the system.",

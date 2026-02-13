@@ -5,9 +5,10 @@ interface Props {
   linkedIn: string;
   email: string;
   gitHub: string;
+  contactEmail: string;
 }
 
-const { linkedIn, email, gitHub } = Astro.props;
+const { linkedIn, email, gitHub, contactEmail } = Astro.props;
 ---
 
 <div
@@ -84,7 +85,7 @@ const { linkedIn, email, gitHub } = Astro.props;
 
       <li>
         <a
-          href={email}
+          href={contactEmail}
           class="hover:text-gray-900 transition-colors"
           aria-label="Email"
           onclick="event.stopPropagation()"

@@ -18,18 +18,24 @@ const {
   linkedIn,
   gitHub,
   email,
+  contactEmail,
 } = portfolioData!.data;
 ---
 
 <div
   class="flex flex-col mx-auto max-w-360 px-6 xl:px-15 py-10 xl:justify-between xl:flex-row xl:py-0"
 >
-  <Header linkedIn={linkedIn} gitHub={gitHub} email={email} />
+  <Header
+    linkedIn={linkedIn}
+    gitHub={gitHub}
+    email={email}
+    contactEmail={contactEmail}
+  />
 
   <main class="flex flex-col space-y-16 xl:max-w-2xl">
-    <About about={about}  />
+    <About about={about} />
     <Experience experiences={experiences} , experiencesLink={experiencesLink} />
     <Project projects={projects} , projectsLink={projectsLink} />
-    <Footer />
+    <Footer contactEmail={contactEmail} email={email} />
   </main>
 </div>

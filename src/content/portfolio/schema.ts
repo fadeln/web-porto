@@ -27,6 +27,7 @@ export const portfolioSchema = z.object({
   linkedIn: z.string(),
   gitHub: z.string(),
   email: z.string(),
+  contactEmail: z.string(),
   experiences: z.array(experienceSchema),
   experiencesLink: z.string(),
   projects: z.array(projectSchema),
