@@ -70,7 +70,14 @@
       "link": "https://demoinventorymanagement18391.netlify.app",
       "imgPath": "imanagement.png"
     },
-
+    {
+      "id": 3,
+      "name": "Alumni Portal System",
+      "description": "Developed a web-based alumni portal that collects alumni survey data and provides analytical dashboards to visualize alumni career outcomes, employment status, and industry distribution.",
+      "techStack": ["Laravel", "PostgreSQL", "Chart.js", "PHP", "Tailwind"],
+      "link": "https://github.com/fadeln/portal-alumni",
+      "imgPath": "portal-alumni.png"
+    },
     {
       "id": 5,
       "name": "Wasteless Eats",
@@ -100,15 +107,8 @@
       ],
       "link": "https://github.com/fadeln/trashify",
       "imgPath": "trashify.png"
-    },
-    {
-      "id": 3,
-      "name": "Alumni Portal System",
-      "description": "Developed a web-based alumni portal that collects alumni survey data and provides analytical dashboards to visualize alumni career outcomes, employment status, and industry distribution.",
-      "techStack": ["Laravel", "PostgreSQL", "Chart.js", "PHP", "Tailwind"],
-      "link": "https://github.com/fadeln/portal-alumni",
-      "imgPath": ""
     }
+
   ],
   "projectsLink": "https://github.com/fadeln?tab=repositories"
 }
